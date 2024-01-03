@@ -2,6 +2,7 @@
 import React from 'react'
 import UserProfileCard from './UserProfileCard'
 
+
 const userData = [
   {
     id: 1,
@@ -122,6 +123,8 @@ const userData = [
     interests: ["Musique", "Sports", "Technologie"],
   },
 ];
+
+
 const App = () => {
   
 const usersStyle = {display:"flex",padding:"30px",flexWrap:"wrap",gap:"25px"}

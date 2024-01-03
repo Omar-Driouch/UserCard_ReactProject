@@ -1,9 +1,16 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useState } from 'react'
 
 const UserProfileCard = ({user} ) => {
-	const showdetails = false;
+	const [count, setTount] = useState(true);
+	 const showdetails =()=>{
+		if(count){setTount(false);}
+		else {
+      setTount(true);
+    }
+	 }
+	 
 	
 	const cardStyle = {
     width: "330px",
@@ -39,22 +46,22 @@ const UserProfileCard = ({user} ) => {
   return (
     <>
       <div className="card" style={cardStyle}>
-        <img src={user.imageUrl} style={imgStyle}/>
+        <img src={user.imageUrl} style={imgStyle} />
         <h2>{user.name}</h2>
         <p>{user.description}</p>
-        {showdetails && (
-          <div className="description" hidde>
+        {count && (
+          <div className="description">
             <h3>Age : {user.age}</h3>
             <h3>Ville : {user.location}</h3>
 
-            <ul className='interets' style={{display:'flex',gap:'10px'}}>
+            <ul className="interets" style={{ display: "flex", gap: "10px" }}>
               {user.interests.map((hobie) => (
                 <li style={liStyle}>{hobie}</li>
               ))}
             </ul>
           </div>
         )}
-        <button id="ShowDetails" style={btnStyle}>
+        <button onClick={showdetails} id="ShowDetails" style={btnStyle}>
           Show Details
         </button>
       </div>
