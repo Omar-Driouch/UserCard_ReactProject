@@ -2,127 +2,136 @@
 import React from 'react'
 import UserProfileCard from './UserProfileCard'
 
-const userData = [ 
+const userData = [
+  {
+    id: 1,
 
-  { 
+    name: "Abderrahim Boujedar",
 
-    id: 1, 
+    description: "Full stack .Net/React developer",
 
-    name: "Ali Dahmani", 
+    imageUrl: "/images/img1.jpg",
 
-    description: "Full stack .Net/React developer", 
+    age: "28 ans",
 
-    imageUrl: "/images/ali.jpg", 
+    mobilite: "national",
 
-    age: "28 ans", 
+    disponibilité: "immédiate",
 
-    mobilite: "national", 
+    location: "Rabat, Maroc",
 
-    disponibilité: "immédiate", 
+    interests: ["Musique", "Voyage", "Lecture"],
+  },
 
-    location: "Rabat, Maroc", 
+  {
+    id: 2,
 
-    interests: ["Musique", "Voyage", "Lecture"] 
+    name: "Lina Al-Farsi",
 
-  }, 
+    description: "Mobile developer",
 
-  { 
+    imageUrl: "/images/img2.jpg",
 
-    id: 2, 
+    age: "32 ans",
 
-    name: "Lina Al-Farsi", 
+    mobilite: "international",
 
-    description: "Mobile developer", 
+    disponibilité: "1 mois",
 
-    imageUrl: "/images/lina.jpg", 
+    location: "Dubaï, Émirats Arabes Unis",
 
-    age: "32 ans", 
+    interests: ["Technologie", "Cinéma", "Yoga"],
+  },
 
-    mobilite: "international", 
+  {
+    id: 3,
 
-    disponibilité: "1 mois", 
+    name: "Youssef Amrani",
 
-    location: "Dubaï, Émirats Arabes Unis", 
+    description: "Data scientist",
 
-    interests: ["Technologie", "Cinéma", "Yoga"] 
+    imageUrl: "/images/img3.jpg",
 
-  }, 
+    age: "30 ans",
 
-  { 
+    mobilite: "national",
 
-    id: 3, 
+    disponibilité: "immédiate",
 
-    name: "Youssef Amrani", 
+    location: "Casablance, Maroc",
 
-    description: "Data scientist", 
+    interests: ["Programmation", "Jeux vidéo", "Voyage"],
+  },
 
-    imageUrl: "/images/youssef.jpg", 
+  {
+    id: 4,
 
-    age: "30 ans", 
+    name: "Sara Khoury",
 
-    mobilite: "national", 
+    description: "Full stack .Net/React developer",
 
-    disponibilité: "immédiate", 
+    imageUrl: "/images/img4.jpg",
 
-    location: "Casablance, Maroc", 
+    age: "26 ans",
 
-    interests: ["Programmation", "Jeux vidéo", "Voyage"] 
+    mobilite: "international",
 
-  }, 
+    disponibilité: "3 mois",
 
-  { 
+    location: "Meknes, Maroc",
 
-    id: 4, 
+    interests: ["AI", "Robotique", "Lecture"],
+  },
 
-    name: "Sara Khoury", 
+  {
+    id: 5,
 
-    description: "Full stack .Net/React developer", 
+    name: "Amal Salim",
 
-    imageUrl: "/images/sara.jpg", 
+    description: "Full stack JEE/Angular developer",
 
-    age: "26 ans", 
+    imageUrl: "/images/img5.jpg",
 
-    mobilite: "international", 
+    age: "35 ans",
 
-    disponibilité: "3 mois", 
+    mobilite: "national",
 
-    location: "Meknes, Maroc", 
+    disponibilité: "immédiate",
 
-    interests: ["AI", "Robotique", "Lecture"] 
+    location: "Casablanca, Maroc",
 
-  }, 
+    interests: ["Musique", "Sports", "Technologie"],
+  },
+  {
+    id: 6,
 
-  { 
+    name: "Amal Salim",
 
-    id: 5, 
+    description: "Full stack JEE/Angular developer",
 
-    name: "Amal Salim", 
+    imageUrl: "/images/img6.jpg",
 
-    description: "Full stack JEE/Angular developer", 
+    age: "35 ans",
 
-    imageUrl: "/images/amir.jpg", 
+    mobilite: "national",
 
-    age: "35 ans", 
+    disponibilité: "immédiate",
 
-    mobilite: "national", 
+    location: "Casablanca, Maroc",
 
-    disponibilité: "immédiate", 
-
-    location: "Casablanca, Maroc", 
-
-    interests: ["Musique", "Sports", "Technologie"] 
-
-  } 
-]
+    interests: ["Musique", "Sports", "Technologie"],
+  },
+];
 const App = () => {
+  
+const usersStyle = {display:"flex",padding:"30px",flexWrap:"wrap",gap:"25px"}
   return (
-    <div>
-      {userData.map((user)=>(
-        <UserProfileCard key={user.id} user={user}/>
+    <div className="users" style={usersStyle}>
+      {userData.map((user) => (
+        <UserProfileCard key={user.id} user={user} />
       ))}
-      
     </div>
-  )
+  );
 }
 
 
