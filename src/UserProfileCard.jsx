@@ -3,12 +3,10 @@
 import React, { useState } from 'react'
 
 const UserProfileCard = ({user} ) => {
-	const [count, setTount] = useState(true);
+	const [count, setTount] = useState(false);
 	 const showdetails =()=>{
 		if(count){setTount(false);}
-		else {
-      setTount(true);
-    }
+		else {setTount(true);}
 	 }
 	 
 	
@@ -16,10 +14,14 @@ const UserProfileCard = ({user} ) => {
     width: "330px",
     padding: "10px",
     boxShadow: "0 5px 15px rgba(0,0,0,0.2)",
+    borderRadius:"15px",
+    height:"100%"
   };
   const imgStyle = {
-    width: "300px",
-    height: "300px",
+    
+    width: "200px",
+    height: "200px",
+    
     objectFit: "cover",
     borderRadius: "50%",
   };
@@ -37,16 +39,21 @@ const UserProfileCard = ({user} ) => {
     textTransform: "uppercase",
     padding: "15px",
     margin: "10px 0",
-    background: "tomato",
+    background: "linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)",
     color: "#fff",
     fontWeight: "700",
     border: "none",
     cursor: "pointer",
   };
+  const imagcard = {
+    textAlign: "center"
+  };
   return (
     <>
       <div className="card" style={cardStyle}>
-        <img src={user.imageUrl} style={imgStyle} />
+        <div style={imagcard}>
+          <img src={user.imageUrl} style={imgStyle} />
+        </div>
         <h2>{user.name}</h2>
         <p>{user.description}</p>
         {count && (

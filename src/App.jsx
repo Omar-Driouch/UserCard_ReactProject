@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import UserProfileCard from './UserProfileCard'
+import Header from './Header';
 
 
 const userData = [
@@ -129,11 +130,14 @@ const App = () => {
   
 const usersStyle = {display:"flex",padding:"30px",flexWrap:"wrap",gap:"25px"}
   return (
-    <div className="users" style={usersStyle}>
-      {userData.map((user) => (
-        <UserProfileCard key={user.id} user={user} />
-      ))}
-    </div>
+    <>
+    <Header/>
+      <div className="users" style={usersStyle}>
+        {userData.map((user) => (
+          <UserProfileCard key={user.id} user={user} />
+        ))}
+      </div>
+    </>
   );
 }
 
