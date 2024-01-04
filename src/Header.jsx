@@ -6,7 +6,7 @@ const Header = () => {
       <header
         style={{
           height: "90px",
-          background: "#05437A",
+          background: "#ff0000",
           padding: "0 30px",
           display: "flex",
           alignItems: "center",
