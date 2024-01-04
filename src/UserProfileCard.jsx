@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
@@ -63,7 +64,7 @@ const UserProfileCard = ({user} ) => {
 
             <ul className="interets" style={{ display: "flex", gap: "10px" }}>
               {user.interests.map((hobie) => (
-                <li style={liStyle}>{hobie}</li>
+                <li key={hobie} style={liStyle}>{hobie}</li>
               ))}
             </ul>
           </div>
