@@ -10,13 +10,15 @@ const UserProfileCard = ({user} ) => {
 		else {setTount(true);}
 	 }
 	 
+  
 	
 	const cardStyle = {
     width: "330px",
     padding: "10px",
     boxShadow: "0 5px 15px rgba(0,0,0,0.2)",
-    borderRadius:"15px",
-    height:"100%"
+    borderRadius: "15px",
+    
+    height: "100%",
   };
   const imgStyle = {
     
@@ -33,6 +35,7 @@ const UserProfileCard = ({user} ) => {
     padding: "5px",
     borderRadius: "5px",
     margin: "5px 0",
+    
   };
   const btnStyle = {
     width: "100%",
@@ -47,8 +50,13 @@ const UserProfileCard = ({user} ) => {
     cursor: "pointer",
   };
   const imagcard = {
-    textAlign: "center"
+    textAlign: "center",
+     
   };
+
+  const fontstyle={
+    fontSize: "15px"
+  }
   return (
     <>
       <div className="card" style={cardStyle}>
@@ -59,12 +67,14 @@ const UserProfileCard = ({user} ) => {
         <p>{user.description}</p>
         {count && (
           <div className="description">
-            <h3>Age : {user.age}</h3>
-            <h3>Ville : {user.location}</h3>
+            <h3 style={fontstyle}>Email : {user.email}</h3>
+            <h3 style={fontstyle}>Ville : {user.location}</h3>
 
             <ul className="interets" style={{ display: "flex", gap: "10px" }}>
               {user.interests.map((hobie) => (
-                <li key={hobie} style={liStyle}>{hobie}</li>
+                <li key={hobie} style={liStyle}>
+                  {hobie}
+                </li>
               ))}
             </ul>
           </div>

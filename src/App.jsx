@@ -8,17 +8,13 @@ const userData = [
   {
     id: 1,
 
-    name: "Abderrahim Boujedar",
+    name: "Abderrahim BOUJEDAR",
 
     description: "Full stack .Net/React developer",
 
     imageUrl: "/images/img1.jpg",
 
-    age: "28 ans",
-
-    mobilite: "national",
-
-    disponibilité: "immédiate",
+    email: "abderrahimboujedar@gmail.com",
 
     location: "Rabat, Maroc",
 
@@ -28,37 +24,29 @@ const userData = [
   {
     id: 2,
 
-    name: "Lina Al-Farsi",
+    name: "Omar DRIOUCH",
 
-    description: "Mobile developer",
+    description: "Full stack .Net/React developer",
 
-    imageUrl: "/images/img2.jpg",
+    imageUrl: "/images/img2.png",
 
-    age: "32 ans",
+    email: "omardriouch29@gmail.com",
 
-    mobilite: "international",
+    location: "Kenitra, Maroc",
 
-    disponibilité: "1 mois",
-
-    location: "Dubaï, Émirats Arabes Unis",
-
-    interests: ["Technologie", "Cinéma", "Yoga"],
+    interests: ["Technologie", "Cinéma", "Football"],
   },
 
   {
     id: 3,
 
-    name: "Youssef Amrani",
+    name: "Imane MOUHMOUH",
 
-    description: "Data scientist",
+    description: "Full stack .Net/React developer",
 
-    imageUrl: "/images/img3.jpg",
+    imageUrl: "/images/img3.png",
 
-    age: "30 ans",
-
-    mobilite: "national",
-
-    disponibilité: "immédiate",
+    email: "mouhmouhimane218@gmail.com",
 
     location: "Casablance, Maroc",
 
@@ -68,17 +56,13 @@ const userData = [
   {
     id: 4,
 
-    name: "Sara Khoury",
+    name: "ABDELLAH FLAYOU",
 
     description: "Full stack .Net/React developer",
 
-    imageUrl: "/images/img4.jpg",
+    imageUrl: "/images/img4.png",
 
-    age: "26 ans",
-
-    mobilite: "international",
-
-    disponibilité: "3 mois",
+    email: "flayou.abdellah05@gmail.com",
 
     location: "Meknes, Maroc",
 
@@ -88,17 +72,13 @@ const userData = [
   {
     id: 5,
 
-    name: "Amal Salim",
+    name: "Anass BOUGAMZA",
 
-    description: "Full stack JEE/Angular developer",
+    description: "Full stack .Net/React developer",
 
-    imageUrl: "/images/img5.jpg",
+    imageUrl: "/images/img5.png",
 
-    age: "35 ans",
-
-    mobilite: "national",
-
-    disponibilité: "immédiate",
+    email: "Bgmza.anass@gmail.com",
 
     location: "Casablanca, Maroc",
 
@@ -107,17 +87,13 @@ const userData = [
   {
     id: 6,
 
-    name: "Amal Salim",
+    name: "AMAL BENMOUSSA",
 
-    description: "Full stack JEE/Angular developer",
+    description: "Full stack .Net/React developer",
 
-    imageUrl: "/images/img6.jpg",
+    imageUrl: "/images/img6.png",
 
-    age: "35 ans",
-
-    mobilite: "national",
-
-    disponibilité: "immédiate",
+    email: "benmoussa17amal@gmail.com",
 
     location: "Casablanca, Maroc",
 
